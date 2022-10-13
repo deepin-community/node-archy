@@ -1,0 +1,28 @@
+Description: use tap to run tests instead of tape
+Forwarded: not-needed
+Author: Jérémy Lal <kapouer@melix.org>
+Last-Update: 2016-12-19
+--- a/test/beep.js
++++ b/test/beep.js
+@@ -1,4 +1,4 @@
+-var test = require('tape');
++var test = require('tap').test;
+ var archy = require('../');
+ 
+ test('beep', function (t) {
+--- a/test/multi_line.js
++++ b/test/multi_line.js
+@@ -1,4 +1,4 @@
+-var test = require('tape');
++var test = require('tap').test;
+ var archy = require('../');
+ 
+ test('multi-line', function (t) {
+--- a/test/non_unicode.js
++++ b/test/non_unicode.js
+@@ -1,4 +1,4 @@
+-var test = require('tape');
++var test = require('tap').test;
+ var archy = require('../');
+ 
+ test('beep', function (t) {
